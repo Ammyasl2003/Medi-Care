@@ -1,0 +1,346 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(65, 45, 45, 0.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}  
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary);
+}
+            
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+
+
+
+    .doc{
+
+        background-color: whitesmoke;
+       overflow:hidden;
+       border-radius: 8px;
+       
+       display:inline-block;
+       position:relative;
+       transition:all .3s ease-in-out;
+        width: 30%;
+      margin-left: 2%;
+    
+      justify-content: space-between;
+      align-items: center;
+
+      
+    }
+    .doc image{
+        
+        width: 30%;
+        position: relative;
+       
+    }
+    .doc .image i{
+        color: var(black);
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: red;
+    }
+    .doc .image span{
+        color: red;
+        font-size: 2rem;
+        margin-left: 35%;
+    }
+    .doc .image p{
+        font-size: 2rem;
+        color: navy;
+        text-align: center;
+    }
+    .doc .image li{
+        font-size: 1.5rem;
+    }
+
+    .doc .image h2{
+    font-family:Copperplate Gothic Light;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .doc .image .button{
+        background-color: #b9bbb4; 
+  border: none;
+  color: navy;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20%;
+    }
+    .doc .image .button:hover{
+        background-color:yellow;
+    }
+    img{
+     margin-top: 5%;
+        margin-left: 10%;
+    }
+.search{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.search h1{
+    font-size: 2rem;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.search select{
+    font-size: 2rem;
+  
+}
+.search option{
+    font-family: 'Courier New', Courier, monospace;
+}
+        </style>
+    </head>
+    <body>
+        <header class="header">
+
+            <a href="#" class="logo"> <img src="logo.jpg" width="80px" > </a>
+      
+            <nav class="navbar">
+               <a href="ammy.html">HOME</a>
+               <a href="ammy.html">ABOUT</a>
+               <a href="doctor.html">DOCTORS</a>
+               <a href="lab.html">LAB TESTS</a>
+               
+               <a href="contact.html">Contact Us</a>
+               <a href="https://www.rehmatfoundation.in/" class="btn"> DONATE</a></b>
+               
+            </nav>
+      
+            <div id="menu-btn" class="fas fa-bars"></div>
+      
+         </header>
+
+
+         <div class="search"><b>
+            <h1>Search For Lab Tests here : 
+     <select>
+       <option >Liver Function Test</option>
+       <option >Urine Test</option>
+       <option >CBC</option>
+       <option >Kidney Function Test </option>
+       <option >Lipid Screen</option>
+       <option >Surgeon</option>
+       <option >Dentist</option>
+       <option >Neurologist</option>
+       <option >Surgeon</option>
+       <option >Cardiologist</option>
+       <option >Homeopathic</option>
+       <option >Surgeon</option>
+       <option value="java" selected>Lab Tests</option>
+     </select></h1>
+    </b>
+    </div>
+
+
+        <div class="banner">
+        <img src="banner1.webp" width="80%">
+        </div>
+        <section class="doc" id="doc">
+            <div class="image">
+                <i class="fa fa-heartbeat"></i>
+            
+            <div class="content">
+                <h2>Good Health Package</h2>
+                <br><span>Rs. 450</span>  <a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>CBC (27 tests)</li>
+                   <li>Liver Function Test (12 tests), Kidney Function Test (10 tests)</li>
+                   <li> Urine Routine & Microscopic Examination (23 tests)</li>
+                   <li>Lipid Screen (9 tests)</li>
+                  </ul>
+            </div></div>
+</section>
+
+<section class="doc" id="doc">
+            <div class="image">
+                <i class="fa fa-medkit"></i>
+            
+            <div class="content">
+                <h2>Arthritis <br>Screening</h2><br>
+                <br><span>Rs. 450</span><a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>RA Test Rheumatoid Arthritis Factor (1)</li>
+                   <li>Kidney Function Test / KFT (10)</li>
+                   
+                   <li>
+                    CBC <br>(26)</li>
+                  </ul>
+            </div></div>
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <i class="	fa fa-plus-square"></i>
+            
+            <div class="content">
+                <h2>Good Health Package</h2>
+                <br><span>Rs. 450</span>  <a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>CBC (27 tests)</li>
+                   <li>Liver Function Test (12 tests), Kidney Function Test (10 tests)</li>
+                   <li> Urine Routine & Microscopic Examination (23 tests)</li>
+                   <li>Lipid Screen (9 tests)</li>
+                  </ul>
+            </div></div>
+        </section>
+        <section class="doc" id="doc">
+            <div class="image">
+                <i class="	fa fa-stethoscope"></i>
+            
+            <div class="content">
+                <h2>Good Health Package</h2>
+                <br><span>Rs. 450</span>  <a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>CBC (27 tests)</li>
+                   <li>Liver Function Test (12 tests), Kidney Function Test (10 tests)</li>
+                   <li> Urine Routine & Microscopic Examination (23 tests)</li>
+                   <li>Lipid Screen (9 tests)</li>
+                  </ul>
+            </div></div>
+        </section>
+        <section class="doc" id="doc">
+            <div class="image">
+                <i class="	fa fa-user-md"></i>
+            
+            <div class="content">
+                <h2>Good Health Package</h2>
+                <br><span>Rs. 450</span>  <a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>CBC (27 tests)</li>
+                   <li>Liver Function Test (12 tests), Kidney Function Test (10 tests)</li>
+                   <li> Urine Routine & Microscopic Examination (23 tests)</li>
+                   <li>Lipid Screen (9 tests)</li>
+                  </ul>
+            </div></div>
+        </section>
+        <section class="doc" id="doc">
+            <div class="image">
+                <i class="fa fa-heartbeat"></i>
+            
+            <div class="content">
+                <h2>Good Health Package</h2>
+                <br><span>Rs. 450</span>  <a href="labbook.html" class=button>Book Now</a>
+                    <br><p>Parameters</p>
+                    <ul>
+                   <li>CBC (27 tests)</li>
+                   <li>Liver Function Test (12 tests), Kidney Function Test (10 tests)</li>
+                   <li> Urine Routine & Microscopic Examination (23 tests)</li>
+                   <li>Lipid Screen (9 tests)</li>
+                  </ul>
+            </div></div>
+        </section>
+        </body>
+        </html> 

@@ -1,0 +1,323 @@
+<html>
+    <head>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(65, 45, 45, 0.1);
+}
+h1{
+    font-size: 2rem;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}  
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary);
+}
+            
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+
+
+.doc .text1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.doc{
+    height: 450px;
+        display:inline-block;
+        width: 40%;
+
+      margin-left: 6%;
+      margin-bottom: 2%;
+       align-items: center;
+       background-color: whitesmoke;
+       overflow:hidden;
+       justify-content: space-between;
+      
+    }
+    .doc image{
+        width: 20%;
+        position: relative;
+       
+    }
+    .doc .image img{
+        width: 40%;
+        margin-left: 25%;
+        margin-top: 2%;
+    }
+    .doc .image h2{
+    font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 2rem;
+    
+    }
+    .doc .image span{
+        font-size: 2rem;
+        color:black;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+.doc .image button{
+   margin-top: 5%;
+   margin-bottom: 5%;
+    background-color: #b9bbb4; 
+  border: none;
+  color: white;
+  padding: 5px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 30%;
+}  
+.doc .image button:hover{
+    background-color: gold;
+  color: white;
+}
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6rem;
+}
+.about  img{
+
+    
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 51rem;
+}
+
+.about .row .content h3{
+    font-size: 3.5rem;
+    color: var(--primary);
+    padding: 6rem 51rem;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color: #666;
+    padding: 1rem 0;
+    line-height: 1.8;
+}   
+.search{
+    position: relative;
+    margin-top: 10%;
+    margin-left: 35%;
+}
+.search h1{
+    font-size: 3rem;
+    margin-left: 8%;
+    font-family:'Courier New', Courier, monospace;
+}
+.search select{
+    font-size: 2rem;
+  
+}
+.search option{
+    font-family: 'Courier New', Courier, monospace;
+}
+     </style>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+
+            <a href="#" class="logo"> <img src="logo.jpg" width="80px" > </a>
+    
+            <nav class="navbar">
+               <a href="ammy.html">HOME</a>
+               <a href="ammy.html">ABOUT</a>
+               <a href="doctor.html">DOCTORS</a>
+               <a href="lab.html">LAB TESTS</a>
+               
+               <a href="contact.html">Contact Us</a>
+               <a href="login.html" class="btn"> LOGIN</a>
+               
+            </nav>
+      
+            <div id="menu-btn" class="fas fa-bars"></div>
+      
+         </header>
+         
+       <div class="search"><b>
+                <h1>SURGEON DOCTORS</h1>
+         
+        </div>
+
+   <section class="about" id="about">
+ 
+
+</section>
+
+
+ <br>
+        <section class="doc" id="doc">
+            
+            <div class="image">
+                <img src="doc1.jpg">
+        
+            <div class="content">
+                <h2><span>Surgeon</span>
+                    <br>Dr. V.D. Singh VM Plastic Surgery<br>
+                <a href="https://maps.app.goo.gl/SEfwqFmVmTF93CYd9">Address</a> Sector 33, <br>   
+                Chandigarh</h2>
+                <button><a href="appointment2.html"><b>BOOK</b></a></button>
+         
+                
+            </div>
+        </div>
+        
+</section>
+<section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2><span>Surgeon</span><br>Dr. Ashok Sharma(MBBS, MS - General Surgery)<br>
+                    <a href="https://maps.app.goo.gl/SEfwqFmVmTF93CYd9">Address</a> House No. 1410, Sector 42 B,Chandigarh</h2>
+                <button><a href="appointment2.html"><b>BOOK</b></a></button>
+                
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc1.jpg">
+            
+            <div class="content">
+                <h2><span>Surgeon</span><br>Dr Tushar Negi(BCI)<br>Address:#420 Sector 15 Chd</h2>
+                <button><a href="appointment2.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+    
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2>Dr. Tushar Singh Negi<br><span>Cardiologist</span></h2>  <button><a href="appointment.html"><b>BOOK</b></a></button>
+            </div></div>
+</section>
+<section class="doc" id="doc">
+            <div class="image">
+                <img src="doc1.jpg">
+            
+            <div class="content">
+                <h2>Dr. Paras Sachdeva<br><span>Homeopathic</span></h2>  <button><a href="appointment.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+
+        <section class="doc" id="doc">
+            <div class="image">
+                <img src="doc2.jpg">
+            
+            <div class="content">
+                <h2>Dr. Rohan Kapoor<br><span>Dentist</span></h2>  <button><a href="appointment.html"><b>BOOK</b></a></button>
+            </div></div>
+
+        </section>
+    </body>
+
+</html>
