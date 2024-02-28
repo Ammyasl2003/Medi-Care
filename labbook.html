@@ -170,15 +170,15 @@ form .user-details .input-box{
   <div class="container">
     <div class="title">BOOK APPOINTMENT</div>
     <div class="content">
-      <form action="#">
+      <form name="myForm" action="lab.php" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name"  name="Name" minlength="5" maxlength="13" required>
           </div>
           <div class="input-box">
-            <span class="details">Doctors</span>
-            <select>
+            <span class="details">Select Test</span>
+            <select name="test"  id="test" required>
               <option>Full Body Checkup</option>
               <option>Complete blood count</option>
               <option>Basic Metabolic Panel</option>
@@ -191,20 +191,17 @@ form .user-details .input-box{
 
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email" name="email" pattern=".+@gmail.com" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" name="phone"pattern="[0-9]{10}" required>
           </div>
           <div class="input-box">
             <span class="details">Appointment Date</span>
-            <input type="date" placeholder="select date" required>
+            <input type="date" placeholder="select date" name="date" required>
           </div>
-          <div class="input-box">
-            <span class="details">Message</span>
-          <textarea rows="5" cols="43"> </textarea>
-          </div>
+          
         </div>
         <div class="gender-details">
           <input type="radio" name="gender" id="dot-1">
