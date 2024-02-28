@@ -43,7 +43,7 @@ exit;
 		echo $execval;
 
 
-		header('Location: /HOTEL/login.html	');
+		header('Location: /Medi-Care/login.html	');
 
       exit;
 

@@ -200,6 +200,156 @@ section{
     margin-top :8%;
     width: 80%;
 }
+
+.footer{
+    background: var(--secondary);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--primary);
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary);
+}
+
+.footer .share{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a{
+    color: var(--primary);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover{
+    color: var(--white);
+    background: var(--primary);
+    transform: rotate(360deg);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.footer .credit span{
+    color: var(--primary);
+}
+
+
+
+
+/* media queries */
+
+@media (max-width:991px){
+
+html{
+    font-size: 55%;
+}
+
+.header{
+    padding: 2rem 3rem;
+}
+
+}
+
+@media (max-width: 768px){
+
+#menu-btn{
+    display: inline-block;
+}
+
+.header .navbar{
+    position: absolute;
+    top: 110%; right: -110%;
+    width: 30rem;
+    box-shadow: var(--box-shadow);
+    background: var(--white);
+    border-radius: .5rem;
+}
+
+.header .navbar.active{
+    right: 2rem;
+    transition: .4s linear;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin: 2rem 2.5rem;
+    display: block;
+}
+
+.home .slide .content{
+    width: 50rem;
+}
+
+.review .review-slider{
+    width: 100%;
+    padding: 1rem;
+    padding-top: 15%;
+}
+.banner img{
+    margin-top: 30%;
+    width:100%;
+    margin-left: 0%;
+}
+
+.doc{
+   margin-left: 10%;
+    height: 50%;
+    width:80%;
+}
+.doc .image .content span{
+    font-size: 2rem;
+    margin-right: 20%;
+    margin-left: 40%;
+}
+.doc .image img{
+    margin-top:0%;
+    margin-left: 35%;
+    width:30%;
+}
+.doc .image .content .button{
+    width: 50%;
+  margin-left: 25%;
+  
+}
+.doc .image .content a{
+font-size: 1.5rem;
+}
+}
         </style>
     </head>
     <body>
@@ -347,5 +497,52 @@ section{
                   </ul>
             </div></div>
         </section>
+
+                         
+
+   <section class="footer">
+
+    <div class="box-container">
+
+       <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>9988998899</a>
+          <a href="#"> <i class="fas fa-phone"></i>8989899999</a>
+          <a href=""> <i class="fas fa-envelope"></i> ammyladhar26@gmail.com</a>
+          <a href="#"> <i class="fas fa-map"></i> Chandigarh, india</a>
+       </div>
+
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> about</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> doctors</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> test</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> book now</a>
+       </div>
+
+       <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+       </div>
+
+    </div>
+
+    <div class="share">
+       <a href="https://www.facebook.com/profile.php?id=100045338284518&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+       <a href="https://instagram.com/deep_ammy_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit">&copy; copyright @ 2023 by <span>Ammy Badshah</span></div>
+
+ </section>
+
         </body>
         </html> 
+        <script src="ammy.js"></script>

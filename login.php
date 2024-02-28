@@ -27,7 +27,7 @@ if ($conn->connect_error) {
            
 
             // header('Location: /HOTEL/ammy.html ');
-            header('Location: /HOTEL/ammy.html	');
+            header('Location: /Medi-Care/ammy.html	');
 
             exit;
 
