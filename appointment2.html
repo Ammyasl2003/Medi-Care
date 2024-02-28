@@ -170,11 +170,11 @@ form .user-details .input-box{
   <div class="container">
     <div class="title">BOOK APPOINTMENT</div>
     <div class="content">
-      <form action="#">
+      <form action="appointment.php" method="post">
         <div class="user-details">
           <div class="input-box">
             <span class="details">Full Name</span>
-            <input type="text" placeholder="Enter your name" required>
+            <input type="text" placeholder="Enter your name" name= "name" required/>
           </div>
          
 
@@ -182,7 +182,7 @@ form .user-details .input-box{
          
           <div class="input-box">
             <span class="details">Selected Surgeon Doctors</span>
-<select>
+<select name="doctor">
               <option>Dr. V.D. Singh VM Plastic Surgery</option>
             
 
@@ -191,19 +191,19 @@ form .user-details .input-box{
 
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="text" placeholder="Enter your email" required>
+            <input type="text" placeholder="Enter your email" name="email" required>
           </div>
           <div class="input-box">
             <span class="details">Phone Number</span>
-            <input type="text" placeholder="Enter your number" required>
+            <input type="text" placeholder="Enter your number" name="phone" required>
           </div>
           <div class="input-box">
             <span class="details">Appointment Date</span>
-            <input type="date" placeholder="select date" required>
+            <input type="date" placeholder="select date" name="date" required>
           </div>
           <div class="input-box">
             <span class="details">Message</span>
-          <textarea rows="5" cols="43"> </textarea>
+          <textarea rows="5" cols="43" name="message"> </textarea>
           </div>
         </div>
         <div class="gender-details">

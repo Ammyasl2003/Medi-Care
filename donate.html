@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <!-- swiper js cdn link -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <style>
+    
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --primary:#0077b6;
+    --secondary:#48cae4;
+    --black:#333;
+    --white:#fff;
+    --box-shadow: 0 .5rem 1rem rgba(65, 45, 45, 0.1);
+}
+h1{
+    font-size: 2rem;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}  
+section{
+    padding: 5rem 7%;
+}
+
+.heading{
+    font-size: 4rem;
+    color: var(--primary);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 3rem;
+    background: var(--primary);
+    border-radius: .5rem;
+    color: var(--white);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--secondary);
+}
+            
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: var(--white);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--black);
+}
+
+.header .logo i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    color: var(--black);
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--primary);
+}
+
+.header .navbar .btn{
+    margin-top: 0;
+    color: var(--white);
+}
+
+.header .navbar .btn:hover{
+    color: var(--white);
+}
+
+#menu-btn{
+    display: none;
+    font-size: 2.5rem;
+    margin-left: 1.7rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+#menu-btn:hover{
+    color: var(--primary);
+}
+.text h2{
+    margin-top: 5%;
+    font-size: 5rem;
+    margin-left: 37%;
+    color: navy;
+}
+.text p{
+    font-size: 1.5rem;
+    margin-left: 5%;
+    text-align: center;
+}
+.scanner{
+    margin-left: 40%;
+    margin-top: 5;
+}
+.scanner img{
+    width:40%;
+}
+
+
+
+
+.footer{
+    background: var(--secondary);
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    color: var(--primary);
+}
+
+.footer .box-container .box a{
+    font-size: 1.6rem;
+    display: block;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+    color: var(--primary);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--primary);
+}
+
+.footer .share{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer .share a{
+    color: var(--primary);
+    font-size: 2rem;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 50%;
+    border: .1rem solid var(--primary);
+    margin: .3rem;
+}
+
+.footer .share a:hover{
+    color: var(--white);
+    background: var(--primary);
+    transform: rotate(360deg);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: .1rem solid rgba(0, 0, 0, 0.3);
+    color: var(--white);
+}
+
+.footer .credit span{
+    color: var(--primary);
+}
+
+
+
+   </style>
+</head>
+<body>
+
+   <!-- header -->
+
+   <header class="header">
+
+      <a href="ammy.html" class="logo"> <img src="logo.jpg" width="80px" > </a>
+
+      <nav class="navbar">
+            <b><a href="#home">HOME</a>
+         <a href="#about">ABOUT</a>
+         <a href="doctor.html">DOCTORS</a>
+         
+            
+         <a href="lab.html">LAB TESTS</a>
+         <a href="contact.html">Contact Us</a>
+        
+
+         <a href="index.html" class="btn"> LOG OUT</a></b>
+    
+      
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+   <br><br><br>  
+   <br><br><br>  
+   <br>
+   <div class="text">
+    <h2>Donate With Us</h2>
+    <p>Please send an email to medicare0sd@gmail.com once you have made a donation, so we can confirm receipt.
+       <br> Attach screenshot of payment with email</p>
+   </div>
+
+<div class="scanner">
+   <img src="qrcode.jpg">
+
+</div>
+<br>
+<br>
+
+
+
+
+
+<section class="footer">
+
+    <div class="box-container">
+
+       <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i>9988998899</a>
+          <a href="#"> <i class="fas fa-phone"></i>8989899999</a>
+          <a href=""> <i class="fas fa-envelope"></i> ammyladhar26@gmail.com</a>
+          <a href="#"> <i class="fas fa-map"></i> Chandigarh, india</a>
+       </div>
+
+       <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> home</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> about</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> doctors</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> test</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> book now</a>
+       </div>
+
+       <div class="box">
+          <h3>extra links</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> refund policy</a>
+       </div>
+
+    </div>
+
+    <div class="share">
+       <a href="https://www.facebook.com/profile.php?id=100045338284518&mibextid=ZbWKwL" class="fab fa-facebook-f"></a>
+       <a href="https://instagram.com/deep_ammy_?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D" class="fab fa-instagram"></a>
+       <a href="#" class="fab fa-twitter"></a>
+       <a href="#" class="fab fa-pinterest"></a>
+    </div>
+
+    <div class="credit">&copy; copyright @ 2023 by <span>Ammy Badshah</span></div>
+
+ </section>
+   </body>
+   </html>

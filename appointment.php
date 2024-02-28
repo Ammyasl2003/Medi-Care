@@ -1,13 +1,13 @@
 <?php
 
 $name = $_POST['name'];
-	$tests = $_POST['test'];
+	$doctor = $_POST['doctor'];
 
 	$email = $_POST['email'];
 	
 	$phone = $_POST['phone'];
     $dates= $_POST['date'];
-$gender=$_POST["gender"]; 
+$message=$_POST["message"]; 
 
     $conn = new mysqli('localhost','root','','test');
 	if($conn->connect_error){
@@ -16,12 +16,12 @@ $gender=$_POST["gender"];
 	} else {
 
 
-		$query = "insert into labbook(name,test,email,phone,date,gender) VALUES ('$name','$tests','$email','$phone','$dates','$gender')";
+		$query = "insert into appointment(name,doctor,email,phone,date,message) VALUES ('$name','$doctor','$email','$phone','$dates','$message')";
 	$result= mysqli_query($conn, $query);
 	
 	
 	
-			header("Location: /Medi-care/lab.html");
+			header("Location: /Medi-care/doctor.html");
 	
 		mysqli_close($conn);
 	}
