@@ -7,7 +7,7 @@ $name = $_POST['name'];
 	
 	$phone = $_POST['phone'];
     $dates= $_POST['date'];
-$gender=$_POST["gender"]; 
+ 	$gender=$_POST["gender"]; 
 
     $conn = new mysqli('localhost','root','','test');
 	if($conn->connect_error){
