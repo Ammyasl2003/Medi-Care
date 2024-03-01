@@ -20,8 +20,11 @@ $message=$_POST["message"];
 	$result= mysqli_query($conn, $query);
 	
 	
-	
-			header("Location: /Medi-care/doctor.html");
+	echo '<script>
+	alert("Appointment Booked Successfully");
+	window.location.href="/Medi-care/doctor.html";
+	</script>';
+		
 	
 		mysqli_close($conn);
 	}

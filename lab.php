@@ -20,8 +20,12 @@ $name = $_POST['name'];
 	$result= mysqli_query($conn, $query);
 	
 	
-	
-			header("Location: /Medi-care/lab.html");
+	echo '<script>
+		alert("Lab Test Booked Successfully");
+		window.location.href="/Medi-care/lab.html";
+		</script>';
+		
+		
 	
 		mysqli_close($conn);
 	}

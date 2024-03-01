@@ -41,13 +41,16 @@ exit;
 	
 	
 		echo $execval;
-
-
-		header('Location: /Medi-Care/login.html	');
+	 
+ 
+		echo '<script>
+		alert("Register Successfully");
+		window.location.href="/Medi-Care/login.html	";
+		</script>';
+		
 
       exit;
-
-
+	
 
 
 

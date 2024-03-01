@@ -346,6 +346,47 @@ nav .profile-details i{
   font-weight: 400;
   color: #333;
 }
+
+table{
+  width: 80%;
+  height: 40%;
+  margin-left: 10%;
+text-align: center;
+align-items: center;
+  margin-top: 10%;
+}
+th{
+  color: blue;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+td{
+  font-size: 1.3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+table, th, td {  
+border: 3px solid navy;  
+border-collapse: collapse;
+}   
+table#alter th {  
+color: white;  
+background-color: gray;  
+}  
+
+
+
+
+
+
+
+
+
+.table{
+  margin-left: 20%;
+}
+
+
+
 /* Responsive Media Query */
 @media (max-width: 1240px) {
   .sidebar{
