@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 
 <html lang="en" dir="ltr">
@@ -122,9 +119,9 @@ $conn = new mysqli('localhost','root','','test');
 		die("Connection Failed : ". $conn->connect_error);
 	} 
 
-
+   
     $sql = "SELECT * FROM appointment";
-    //fire query
+    
     $result = mysqli_query($conn, $sql);
     echo "<table border='5'>
 
@@ -140,7 +137,7 @@ $conn = new mysqli('localhost','root','','test');
     <th>Date</th>
     <th>Message</th>
     <th>Gender</th>
-    
+<th>Status</th>
     </tr>";
     
      
@@ -148,8 +145,8 @@ $conn = new mysqli('localhost','root','','test');
     while($row = mysqli_fetch_array($result))
     
       {
-    
-      echo "<tr>";
+    ?>
+      <!--echo "<tr>";
     
       echo "<td>" . $row['name'] . "</td>";
     
@@ -161,14 +158,44 @@ $conn = new mysqli('localhost','root','','test');
       echo "<td>" . $row['date'] . "</td>";
       echo "<td>" . $row['message'] . "</td>";
       echo "<td>" . $row['gender'] . "</td>";
+
+
+
+
+     
       echo "</tr>";
+      -->
     
+<tr>
+  <td><?= $row['name'] ?></td>
+  <td><?= $row['email'] ?></td>
+  <td><?= $row['doctor'] ?></td>
+  <td><?= $row['phone'] ?></td>
+  <td><?= $row['date'] ?></td>
+  <td><?= $row['message'] ?></td>
+  <td><?= $row['gender'] ?></td>
+
+<td>
+  <?php
+if ($row['Status']==1)
+{
+  echo "Confirmed";
+
+}
+else{
+  echo "Pending";
+}
+  ?>
+</tr>
+    <?php 
       }
     
     echo "</table>";
     mysqli_close($conn);
  
 ?>
+</body>
+</html>
 
   <script>
    let sidebar = document.querySelector(".sidebar");
@@ -182,6 +209,4 @@ sidebarBtn.onclick = function() {
 }
  </script>
 
-</body>
-</html>
 

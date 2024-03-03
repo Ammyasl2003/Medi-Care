@@ -29,14 +29,21 @@ if ($conn->connect_error) {
             // header('Location: /HOTEL/ammy.html ');
             header('Location: /Medi-Care/ammy.html	');
 
-            exit;
-
-        }
+         exit;
         
-    } else {
-        echo "<h2>Invalid Email or password</h2>";
+    } 
+    else {
+      
+        echo '<script>
+alert("Invalid User or Password");
+window.location.href="login.html";
+</script>';
+
+exit;
+       
+        
     }
-}
+}}
 
 
 

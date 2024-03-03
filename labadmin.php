@@ -132,7 +132,7 @@
     <th>Phone</th>
     <th>Date</th>
     <th>Gender</th>
-    
+  <th>Status</th>
     </tr>";
     
      
@@ -140,7 +140,8 @@
     while($row = mysqli_fetch_array($result))
     
       {
-    
+    ?>
+    <!--
       echo "<tr>";
     
       echo "<td>" . $row['name'] . "</td>";
@@ -154,10 +155,35 @@
       echo "<td>" . $row['date'] . "</td>";
       
       echo "<td>" . $row['gender'] . "</td>";
-    
+ 
+       
       echo "</tr>";
-    
+      -->
+        
+<tr>
+  <td><?= $row['name'] ?></td>
+  <td><?= $row['test'] ?></td>
+  <td><?= $row['email'] ?></td>
+  <td><?= $row['phone'] ?></td>
+  <td><?= $row['date'] ?></td>
+ 
+  <td><?= $row['gender'] ?></td>
+
+<td>
+  <?php
+if ($row['Status']==1)
+{
+  echo "Booked";
+
+}
+else{
+  echo "Pending";
+}
+  ?>
+</tr>
+    <?php 
       }
+      
     
     echo "</table>";
     mysqli_close($conn);
